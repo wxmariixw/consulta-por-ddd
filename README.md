@@ -21,49 +21,14 @@ Simplificar o cotidiano dos moradores, oferecendo controle e automação em áre
 - _Economia de Energia:_ Recursos que ajudam a reduzir o consumo de energia e economizar nas contas de serviços públicos.
 - _Suporte de saúde:_ Contato facilitado com profissionais de saúde e pessoas selecionadas pelo usuário, agenda conectada com suas consultas, exames e terapias.
 
-## Índice
-Tecnologias Utilizadas
-Instalação
-Configuração
-Como Rodar a Aplicação
-Contribuição
-Licença
-
-## Tecnologias Utilizadas
-### Web
-[Lista de tecnologias, linguagens de programação, frameworks e bibliotecas utilizadas no projeto, com links para as respectivas documentações.]
-
-### Mobile 
-[Lista de tecnologias, linguagens de programação, frameworks e bibliotecas utilizadas no projeto, com links para as respectivas documentações.]
-
-## Instalação
-[Instruções de instalação, incluindo pré-requisitos, comandos e pacotes necessários para configurar o ambiente de desenvolvimento.]
-```
-#Exemplo de comando de instalação
-npm install
-```
-
-## Configuração
-[Instruções sobre como configurar o projeto, como arquivos de configuração, variáveis de ambiente, chaves de API, etc.]
-```
-#Exemplo de configuração de variáveis de ambiente
-cp .env.example .env
-```
-
-## Como Rodar a Aplicação
-[Instruções detalhadas sobre como executar a aplicação localmente, tanto para a versão web quanto mobile. Isso pode incluir comandos de desenvolvimento, URLs e portas.]
-
-### Web
-```
-#Inicie o servidor web
-npm start
-```
-
-### Mobile 
-```
-#Inicie o aplicativo móvel em um emulador ou dispositivo
-npm run mobile:start
-```
-
 ## Contribuição
-[Informações sobre como os desenvolvedores podem contribuir para o projeto. Pode incluir orientações sobre issues, pull requests, diretrizes de estilo de código, entre outros.]
+
+[André Luz](https://github.com/andreluz)
+
+[Eduardo Nunes](https://github.com/edununes22)
+
+[Juan Marco Camacho](https://github.com/juanmqc22)
+
+[Mariana Abreu](https://github.com/wxmariixw)
+
+[Miguel Marcondes](https://github.com/miguelmarcondes)
