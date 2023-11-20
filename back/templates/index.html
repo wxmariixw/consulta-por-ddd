@@ -1,0 +1,52 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Cidades por DDD</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        #resultado {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .cidade {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulta de Cidades por DDD</h1>
+    <label for="dddInput">Informe o DDD:</label>
+    <input type="text" id="dddInput">
+    <button onclick="consultarCidades()">Consultar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function consultarCidades() {
+            var ddd = $("#dddInput").val();
+            console.log(ddd);
+            $.get(`http://127.0.0.1:5000/cidades_por_ddd/${ddd}`, function(data) {
+                // Limpa o conteúdo anterior
+                $("#resultado").empty();
+
+                // Adiciona o título
+                $("#resultado").append("<h2>Resultado:</h2>");
+
+                // Ordena as cidades alfabeticamente
+                var cidadesOrdenadas = data.cidades.sort(function (a, b) {
+                    return a.cidade.localeCompare(b.cidade);
+                });
+
+                // Adiciona cada cidade e estado como um elemento div
+                cidadesOrdenadas.forEach(function(item) {
+                    $("#resultado").append(`<div class="cidade">${item.cidade}, ${item.estado}</div>`);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
