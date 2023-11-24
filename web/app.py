@@ -1,17 +1,10 @@
 from flask import Flask, request, jsonify, render_template
 import psycopg2
 import json
+from settings.settings import conn
 
 app = Flask(__name__)
 
-# Configurações do banco de dados
-db_config = {
-    'dbname': 'grandfinale',
-    'user': 'postgres',
-    'password': 'postgres',
-    'host': 'localhost',
-    'port': '5432'
-}
 
 @app.route('/')
 def index():
@@ -22,7 +15,6 @@ def index():
 def cidades_por_ddd(ddd):
     try:
         # Conecta ao banco de dados
-        conn = psycopg2.connect(**db_config)
         cursor = conn.cursor()
     
         # Executa a consulta SQL para obter as cidades e estados associados ao DDD
